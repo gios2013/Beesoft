@@ -29,9 +29,6 @@
             <li class="nav-item px-3">
                 <a class="nav-link" href="#">Escritorio</a>
             </li>
-            <li class="nav-item px-3">
-                <a class="nav-link" href="#">Configuraciones</a>
-            </li>
         </ul>
         <ul class="nav navbar-nav ml-auto">
             <notification :notifications="notifications"></notification>
@@ -76,11 +73,7 @@
     </div>   
     </div>
     <footer class="app-footer">
-        <span><a href="https://www.compartiendocodigos.net/" target="_blank">CompartiendoCódigos</a> &copy; 2018-2019</span>
-        <span class="ml-auto">Version 0.0.1</span>
     </footer>
-    
-
     <script src="js/app.js"></script>
     <script src="js/plantilla.js"></script>
 </body>

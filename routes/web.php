@@ -17,7 +17,19 @@ Route::group(['middleware'=>['guest']],function(){
     Route::get('/login','Auth\LoginController@showLoginForm');
     Route::post('/login', 'Auth\LoginController@login')->name('login');
 });
-  
+Route::get('/datos', 'datos@index')->name('/datos');
+ 
+// Rutas CRUD
+/* Crear */
+Route::get('datos/crear', 'datosController@crear')->name('datos/crear');
+Route::put('datos/store', 'datosController@store')->name('datos/store');
+ 
+/* Leer */
+Route::get('datos', 'datos@index')->name('datos');
+ 
+/* Actualizar */
+Route::get('datos/actualizar/{id}', 'datosController@actualizar')->name('datos/actualizar');
+Route::put('datos/update/{id}', 'datosController@update')->name('datos/update'); 
   
 
 Route::group(['middleware'=>['auth']],function(){

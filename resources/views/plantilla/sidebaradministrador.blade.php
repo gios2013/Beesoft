@@ -14,6 +14,12 @@
                             </li>
                         </ul>
                     </li>
+                    <li @click="menu=3" class="nav-item">
+                                <a class="nav-link" href="#"><i class="icon-user"></i> Datos</a>
+                    </li>
+                    <li @click="menu=4" class="nav-item">
+                                <a class="nav-link" href="#"><i class="icon-user"></i> Empresas</a>
+                     </li>
                 </ul>
             </nav>
             <button class="sidebar-minimizer brand-minimizer" type="button"></button>
