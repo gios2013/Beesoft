@@ -11,7 +11,7 @@
 |
 */
 Route::get('/', function(){
-    return view('home');
+    return view('welcome');
 });
 Route::group(['middleware'=>['guest']],function(){
     Route::get('/login','Auth\LoginController@showLoginForm');
